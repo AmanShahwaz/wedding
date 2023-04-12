@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Roboto+Slab&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.welcome {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../images/background.jpg");
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Satisfy', cursive;
+    background-size: cover;
+}
+
+.borderFlower{
+    height: 200px;
+    position: absolute;
+}
+
+.welcomeTextBox{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+
+.welcomeTextBox h1 {
+    color: yellow;
+    font-size: 4rem;
+    letter-spacing: 7px;
+    font-weight: bold;
+
+    
+}
+
+.welcomeTextBox h3 {
+    font-size:3rem;
+    color: rgb(139, 130, 238);
+    font-weight: 100;
+
+}
+
+.welcomeTextBox h1:nth-child(2){
+    border-bottom: 2px solid ;
+    color: rgb(255, 0, 179);
+}
+
+
+@media only screen and (max-width:450px) {
+    .welcome {
+        height: 60vh;
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/background-for-mobile.jpg.png"); */
+        background-image: url("../wedding/images/background-for-mobile.jpg.png");
+        background-size: auto;
+        padding:5% 5%;
+
+
+    }
+    .welcomeTextBox{
+        height:54vh;
+        width: auto;
+        border: 15px solid white;
+   }
+   .welcomeTextBox h3 {
+    font-size: 2rem;
+    color:yellow;
+}
+   .welcomeTextBox h1 {
+    font-size:3rem;
+    color:black;
+    font-weight: 100;
+    letter-spacing: 1px;
+
+}
+
+}
